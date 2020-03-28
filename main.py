@@ -1,4 +1,5 @@
 import random
+import datetime
 
 def getname():
     while True:
@@ -22,5 +23,12 @@ def getage():
             print("Veuillez saisir un entien SVP !\n")
     return (age)
 
-getage()
-getname()
+def gettime():
+    currentDT = datetime.datetime.now()
+
+    print (currentDT.strftime("%Y-%m-%d %H:%M:%S"))
+    print (currentDT.strftime("%Y/%m/%d"))
+    print (currentDT.strftime("%H:%M:%S"))
+    print (currentDT.strftime("%I:%M:%S %p"))
+    print (currentDT.strftime("%a, %b %d, %Y"))
+gettime()
