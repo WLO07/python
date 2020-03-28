@@ -21,3 +21,6 @@ def getage():
         except ValueError:
             print("Veuillez saisir un entien SVP !\n")
     return (age)
+
+getage()
+getname()
