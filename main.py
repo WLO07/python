@@ -1,6 +1,6 @@
-from function import getname, getage, gettime
-
+from function import getname, getage, gettime, PasswordGenerator
 
 name=getname()
 age=getage()
-print(str(gettime()) + "  "+ " " + name + "  " +str((age)))
+password=PasswordGenerator()
+print(str(gettime()) + "  Votre usermane est " + name + str(age)+ "  et votre password est " + password)
