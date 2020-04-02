@@ -1,6 +1,7 @@
-from function import getname, getage, gettime, PasswordGenerator
+from function import getname, getage, gettime, PasswordGenerator, calculatens, checkpassword
 
-name=getname()
-age=getage()
+#name=getname()
+#age=getage()
 password=PasswordGenerator()
-print(str(gettime()) + "  Votre usermane est " + name + str(age)+ "  et votre password est " + password)
+checkpassword(password)
+#print(str(gettime()) + "  Votre usermane est " + name + str(age)+ "  et votre password est " + password)

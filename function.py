@@ -45,3 +45,20 @@ def PasswordGenerator():
         password+=random.choice(chars)
     print(password)
     return(password)
+
+def calculatens(string):
+    lettre=0
+    nombre=0
+    for i in string:
+        if (i.isdigit()):
+            nombre=nombre+1
+        else:
+            lettre=lettre+1
+    return (lettre, nombre)
+  
+def checkpassword (password):
+    if (not(any(char.isupper() for char in password)) or (not any(char.islower() for char in password)) or (not any(char.isdigit() for char in password))):
+        PasswordGenerator() 
+    else:
+        print(password)
+
